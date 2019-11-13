@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<Html>
+  <head>
+    <title>Guess the number</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1 id="head">Guess the number</h1>
+        <input
+          type="text"
+          onkeypress="return isNum(event)"
+          id="myText"
+          maxlength="6"
+        />
+      </div>
+      <br />
+      <button onclick="check()">
+        Guess
+      </button>
+      <button onclick="redirect()">
+        Replay
+      </button>
+      <p id="val"></p>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</Html>
